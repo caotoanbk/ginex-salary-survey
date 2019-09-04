@@ -1,0 +1,67 @@
+.button-container-1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid transparent;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 1px;
+
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    background-color: #6c757d;
+}
+.button-container-1 button {
+  width: 101%;
+  height: 100%;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1px;
+  background: #ffc107;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(22) forwards;
+  animation: ani2 0.7s steps(22) forwards;
+      padding: .5rem 1rem;
+}
+.button-container-1 button:hover {
+  -webkit-animation: ani 0.7s steps(22) forwards;
+  animation: ani 0.7s steps(22) forwards;
+}
+
+.mas {
+  color: #fff;
+  text-align: center;
+  width: 101%;
+  font-weight: 300;
+  position: absolute;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}

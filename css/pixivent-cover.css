@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Montserrat:400,500,700');
+@import '../vendor/bootstrap/css/bootstrap.min.css';
+@import ('../vendor/fontawesome-free/css/all.min.css')
+
+
+    /* --------------------
+    :: 1.0 Base CSS Start
+    ----------------------*/
+
+    * {
+        margin: 0;
+        padding: 0;
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 100;
+    color: #000;
+    line-height: 1.5;
+    letter-spacing: .03rem;
+}
+
+.letter-spacing{
+    letter-spacing: -2px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container-fluid{
+    width: 90% !important;
+}
+.bg-grey{
+    background-color: #f9f9f9 !important;
+}
+.p-150{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.section-heading{
+    margin-bottom: 60px;
+}
+.section-heading > h2{
+    font-weight: 400;
+    color: #a551fe;
+    font-size: 38px;
+    margin: 0;
+}
+.opacity-1{
+    opacity: .07;
+}
+
+/* --------------------
+:: 2.0 Header Area CSS
+---------------------- */
+
+.header_area{
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    padding: 0 4%;
+}
+
+.menu_area .navbar-brand {
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    line-height: 1;
+    padding: 0;
+}
+
+
+.menu_area .navbar-brand:hover,
+.menu_area .navbar-brand:focus {
+    color: #fff;
+}
+
+@media(max-width: 991px){
+    .header_area.sticky{
+        height: 70px !important;
+    }
+}
+
+.menu_area {
+    position: relative;
+    z-index: 2;
+}
+
+.menu_area #nav .nav-link {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    -webkit-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+    padding: 10px 10px;
+    letter-spacing: 1px;
+}
+
+.menu_area nav ul li > a:hover{
+    color: #ff4961;
+}
+
+/* --------------------
+:: 3.0 Wellcome Area CSS
+-----------------------*/
+
+.wellcome_area{
+    background-image: url(../img/bg-img/bg-2.png);
+    height: 900px;
+    position: relative;
+    z-index: 1;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.wellcome_area:after{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    background-color: #fff;
+    content:'';
+    bottom: 0;
+    z-index: 2;
+}
+
+.wellcome-heading > h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    z-index: 3;
+}
+.wellcome-heading > h3{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+}
+.wellcome-heading > p {
+    color: #fff;
+}
+.wellcome-heading{
+    margin-bottom: 80px;
+}
+
+.welcome-thumb {
+    width: 45%;
+    position: absolute;
+    bottom: 305px;
+    right: 20px;
+    z-index: 9;
+}
+
+.welcome-thumb img{
+    height: auto;
+    width: 100%;
+}
+.bg-font-style{
+    font-size: 80px;
+    margin-bottom: -95px;
+    font-weight: 900;
+    opacity: .02;
+}
+
+/* --------------------
+:: 5.0 Pricing
+---------------------- */
+.btn.submit-btn {
+    background: #f9214f;
+    background: -moz-linear-gradient(left, #f9214f 0%,#fe6f8d 100%);
+    background: -webkit-linear-gradient(left, #f9214f 0%, #fe6f8d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9214f', endColorstr='#fe6f8d',GradientType=1 ); /* IE6-9 */
+    box-shadow: -4px 2px 16px 0px #0000003b;
+    height: 48px;
+    min-width: 185px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    padding-top: 10px;
+}
+.btn.submit-btn:hover{
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+/* --------------------
+:: 6.0 Flip Logo Css
+----------------------*/
+
+.logo-width{
+    width: 48px;
+    margin-right: 8px;
+    margin-top: -3px;
+    border-radius: 5px;
+}
+
+/* ----------------------
+:: 10.0 Typerwriter
+------------------------ */
+.typewriter h2, .typewriter h3 {
+    color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: 
+        typing 3s steps(70, end),
+        blink-caret .5s step-end infinite;
+}
+.typewriter h3{
+    color: #a551fe;
+    font-weight: 700;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-collapse: orange }
+}
+
+.box-outer{
+    overflow: hidden;
+}
+.main_box {
+    position: relative;
+}
+.bar{
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: #000;
+    transition: all 1s linear;
+    -webkit-animation-duration: 1s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    margin-left: -50px;
+}
+.bar.delay{
+    animation-delay: .5s;
+    -webkit-animation-delay: .5s;
+}
+.top{top: -5px; left: -5px;}
+.right{
+    top: 18px;
+    right: -28px;
+    transform: rotate(90deg);
+}
+.bottom{
+    bottom: 2px;
+    left: -5px
+}
+.left{
+    top: 18px;
+    left: -28px;
+    transform: rotate(90deg);
+}
+@-webkit-keyframes h-move {
+    0%{
+        left: -5px;
+    }
+    100%{
+        left: 200px;
+    }
+}
+@keyframes h-move {
+    0%{
+        left: -5px;
+    }
+    100%{
+        left: 300px;
+    }
+}
+.top, .bottom{
+    -webkit-animation-name: h-move;
+    animation-name: h-move;
+}
+@-webkit-keyframes v-move{
+    0%{
+        top: -5px;
+    }
+    100%{
+        top: 228px;
+    }
+}
+@keyframes v-move{
+    0%{
+        top: -5px;
+    }
+    100% {
+        top: 228px;
+    }
+}
+.right, .left{
+    -webkit-animation-name: v-move;
+    animation-name: v-move;
+}
+
+/*----------------------
+::11 Card
+-----------------------*/
+.overlay-blue-grey{
+    background: rgba(96,125,139,.8);
+}
+.overlay-warning {
+    background: #FFA87D;
+    background: rgba(255,168,125,.8);
+}
+.overlay-cyan {
+    /* background: #00BCD4; */
+    background: rgba(0,188,212,.8);
+}
+.overlay-success{background:#16D39A;background:rgba(22,211,154,.8)}
+.overlay-blue {
+    background: #2196F3;
+    background: rgba(33,150,243,.8);
+}
+
+.card{
+    -webkit-box-shadow: 0 10px 40px 0 rgba(62,57,107,.07), 0 2px 9px 0 rgba(62,57,107,.06);
+    box-shadow: 0 10px 40px 0 rgba(62,57,107,.07), 0 2px 9px 0 rgba(62,57,107,.06); 
+}

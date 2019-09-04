@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Landing Page - Start Bootstrap Theme</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i|Prompt:300,300i,400,400i,700,700i&display=swap&subset=vietnamese" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom-form.css">
+  <style>
+      .table td{
+          padding: .3rem;
+      }
+      input.no-border{
+          border: .2px dashed #999;
+          width: 100%;
+          outline: none;
+          padding-left:.3rem;
+      }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fa fa-dollar-sign"></i>alary Survey</a>
+      <div>
+          <a href="#" class="link"><i class="fa fa-home"></i>&nbsp;Trang chủ</a>
+          <a href="#showcase" class="link"><i class="fa fa-money-check"></i>&nbsp;Các gói khảo sát</a>
+          <a href="#signup" class="link"><i class="fa fa-user-plus"></i>&nbsp;Đăng ký</a>
+          <button class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in-alt"></i>&nbsp;Đăng nhập</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h2 class="mb-3">Bạn đang chi trả hay nhận mức lương cạnh tranh?</h2>
+          <p class="lead">Đo lường nhanh mức lương tham khảo được tổng hợp bởi Ginex</p>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-6 mb-2 mb-md-0">
+                <a class="btn btn-block btn-lg btn-creative btn-creative-1" href="#benefit">Lợi ích đem lại</a>
+              </div>
+              <div class="col-12 col-md-6">
+                <a class="btn btn-block btn-lg btn-creative btn-creative-2" href="#signup">Đăng ký tham gia!</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Icons Grid -->
+  <section id="benefit" class="features-icons bg-light text-center">
+    <div class="container">
+    <h2 class="text-success">Lợi ích khi tham gia khảo sát là gì?</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-1">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-screen-desktop m-auto text-primary"></i>
+            </div>
+            <p class="lead mb-0">Nắm được bức tranh tổng thể thị trường lao động với hơn 1000 doanh nghiệp trong và ngoài nước tham gia</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-1">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-layers m-auto text-primary"></i>
+            </div>
+            <p class="lead mb-0">Giúp doanh nghiệp nhận diện mức chi trả và ra quyết định chính xác lương bổng và đãi ngộ nhằm giữ chân nhân tài.
+</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-1">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-check m-auto text-primary"></i>
+            </div>
+            <p class="lead mb-0">Giúp cá nhân ra quyết định chính xác về việc đi hay ở lại với doanh nghiệp vì lý do tiền lương
+</p>
+          </div>
+        </div>
+      </div>
+<!--
+      <div style="position: relative;">
+          <a href="#signup"><img src="./css/arrow-down.svg" alt="fdfdfd" style="position: absolute; top: 1rem; left: calc(50% - 5rem);"></a>
+        </div>
+-->
+    </div>
+  </section>
+  <section class="temporarily">&nbsp;</section>
+  <section class="section-signup" style="padding: 5rem; padding-top: 4rem;" id="signup">
+     <fieldset class="container border p-4" style="border-radius: 8px; border-type: solid; border-color: #851e3e !important; border-width: 1px !important;">
+         <legend align="center" class="w-auto"><h3 class="text-center" style="border-bottom: 1.5px solid #ffcc5c ;">Đăng ký tham gia khảo sát miễn phí</h3></legend>
+<form class="ticksy-form">
+      <div class="row pb-4">
+
+        <div class="col-md-12 order-md-1">
+          <div class="row">
+          <div class="col-md-12">
+          <h6 class="mb-1">Thông tin tài khoản</h6>
+
+            <div class="row">
+              <div class="col-md-3 mb-1">
+                <label for="firstName">Loại tài khoản</label>
+                <select name="account_type" id="" class="form-control">
+                    <option value="Công ty">Công ty</option>
+                    <option value="Cá nhân">Cá nhân</option>
+                </select>
+                <div class="invalid-feedback">
+                  Bạn chưa nhập thông tin này!
+                </div>
+              </div>
+              <div class="col-md-3 mb-1">
+                <label for="email">Email đăng nhập</label>
+                <input type="email" value="{{ old('email') }}" class="form-control" name="email" required>
+                <div class="invalid-feedback{{ $errors->has('email') ? ' d-block' : '' }}">
+                  {{ $errors->first('email') }}
+                </div>
+              </div>
+              <div class="col-md-3 mb-1">
+                <label for="password">Mật khẩu</label>
+                <input type="password" value="" class="form-control" name="password">
+                <div class="invalid-feedback{{ $errors->has('password') ? ' d-block' : '' }}">
+                  {{ $errors->first('password') }}
+                </div>
+              </div>
+              <div class="col-md-3 mb-1">
+                <label for="password_confirmation">Xác nhận mật khẩu</label>
+                <input type="password" value="" class="form-control" name="password_confirmation">
+                <div class="invalid-feedback{{ $errors->has('password_confirmation') ? ' d-block' : '' }}">
+                  {{ $errors->first('password_confirmation') }}
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+           <hr class="mb-3">
+            
+            <div class="row">
+          <div class="col-md-6">
+          <h6 class="mb-1">Tên công ty</h6>
+
+            <div class="row">
+              <div class="col-md-8 mb-1">
+                <label for="full_name">Tên đầy đủ</label>
+                <p>
+                    <input type="text" class="field" name="full_name" value="{{ old('full_name') }}" required>
+                    <span class="required"><i class="fa fa-asterisk"></i></span>
+                  </p>
+                <div class="invalid-feedback{{ $errors->has('full_name') ? ' d-block' : '' }}">
+                  {{ $errors->first('full_name') }}
+                </div>
+              </div>
+              <div class="col-md-4 mb-1">
+                <label for="abbr_name">Tên viết tắt</label>
+                <input type="text" class="form-control" name="abbr_name" value="{{ old('abbr_name') }}" required>
+                <div class="invalid-feedback{{ $errors->has('abbr_name') ? ' d-block' : '' }}">
+                  {{ $errors->first('abbr_name') }}
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+<h6 class="mb-1">Địa chỉ đăng ký kinh doanh</h6>
+            <div class="row">
+              <div class="col-md-5 mb-1">
+                <label for="city">Thành phố hoặc tỉnh</label>
+                <select class="form-control" name="city" required value="{{ old('city') }}">
+                  <option value="">Chọn...</option>
+                  <option>United States</option>
+                </select>
+                <div class="invalid-feedback{{ $errors->has('city') ? ' d-block' : '' }}">
+                  {{ $errors->first('city') }}
+                </div>
+              </div>
+              <div class="col-md-3 mb-1">
+                <label for="district">Quận huyện</label>
+                <select class="form-control" name="district" value="{{ old('district') }}" required>
+                  <option value="">Chọn...</option>
+                  <option>California</option>
+                </select>
+                <div class="invalid-feedback{{ $errors->has('district') ? ' d-block' : '' }}">
+                  {{ $errors->first('district') }}
+                </div>
+              </div>
+              <div class="col-md-4 mb-1">
+                <label for="industry_zone">Khu công nghiệp</label>
+                <input type="text" class="form-control" name="industry_zone" value="{{ old('industry_zone') }}" required>
+                <div class="invalid-feedback{{ $errors->has('industry_zone') ? ' d-block' : '' }}">
+                  {{ $errors->first('industry_zone') }}
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+            
+            <hr class="mb-3">
+
+            <div class="row">
+              <div class="col-md-4 mb-2">
+                <label for="tax_code">Mã số thuế</label>
+                <input type="text" class="form-control" name="tax_code" value="{{ old('tax_code') }}" required>
+                <div class="invalid-feedback{{ $errors->has('tax_code') ? ' d-block' : '' }}">
+                  {{ $errors->first('tax_code') }}
+                </div>
+              </div>
+              <div class="col-md-4 mb-2">
+                <label for="nationality">Quốc tịch</label>
+                <select class="form-control" name="nationality" value="{{ old('nationality') }}" required>
+                  <option value="">Chọn...</option>
+                  <option>United States</option>
+                </select>
+                <div class="invalid-feedback{{ $errors->has('nationality') ? ' d-block' : '' }}">
+                  {{ $errors->first('nationality') }}
+                </div>
+              </div>
+              <div class="col-md-4 mb-2">
+                <label for="linh_vuc">Lĩnh vực hoạt động</label>
+                <select class="form-control" name="linh_vuc" value="{{ old('linh_vuc') }}" required>
+                  <option value="">Chọn...</option>
+                  <option>United States</option>
+                </select>
+                <div class="invalid-feedback{{ $errors->has('linh_vuc') ? ' d-block' : '' }}">
+                  {{ $errors->first('linh_vuc') }}
+                </div>
+              </div>
+              <div class="col-md-3 mb-1">
+                <label for="nganh_cn">Ngành công nghiệp</label>
+                <select class="form-control" name="nganh_cn" value="{{ old('nganh_cn') }}" required>
+                  <option value="">Chọn...</option>
+                  <option>United States</option>
+                </select>
+                <div class="invalid-feedback{{ $errors->has('nganh_cn') ? ' d-block' : '' }}">
+                  {{ $errors->first('nganh_cn') }}
+                </div>
+              </div>
+              <div class="col-md-3 mb-1">
+                <label for="san_pham">Sản phẩm</label>
+                <input type="text" class="form-control" name="san_pham" value="{{ old('san_pham') }}" required>
+                <div class="invalid-feedback{{ $errors->has('san_pham') ? ' d-block' : '' }}">
+                  {{ $errors->first('san_pham') }}
+                </div>
+              </div>
+              <div class="col-md-3 mb-1">
+                <label for="nam_hd">Số năm HĐ tại Việt Nam</label>
+                <select class="form-control" name="nam_hd" value="{{ old('nam_hd') }}" required>
+                  <option value="">Chọn...</option>
+                  <option>United States</option>
+                </select>
+                <div class="invalid-feedback{{ $errors->has('nam_hd') ? ' d-block' : '' }}">
+                  {{ $errors->first('nam_hd') }}
+                </div>
+              </div>
+              <div class="col-md-3 mb-1">
+                <label for="quy_mo">Quy mô nhân sự (người)</label>
+                <select class="form-control" name="quy_mo" value="{{ old('quy_mo') }}" required>
+                  <option value="">Chọn...</option>
+                  <option>United States</option>
+                </select>
+                <div class="invalid-feedback{{ $errors->has('quy_mo') ? ' d-block' : '' }}">
+                  {{ $errors->first('quy_mo') }}
+                </div>
+              </div>
+            </div>
+            
+            <hr class="m3-4">
+
+            <h6 class="mb-1">Thông tin người liên hệ</h6>
+            <div class="row">
+              <div class="col-md-3 mb-1">
+                <label for="contact_person_name">Họ tên</label>
+                <input type="text" class="form-control" name="contact_person_name" value="{{ old('contact_person_name') }}" required>
+                <div class="invalid-feedback{{ $errors->has('contact_person_name') ? ' d-block' : '' }}">
+                  {{ $errors->first('contact_person_name') }}
+                </div>
+              </div>
+              <div class="col-md-3 mb-1">
+                <label for="contact_person_position">Chức vụ</label>
+                <input type="text" class="form-control" name="contact_person_position" value="{{ old('contact_person_position') }}" required>
+                <div class="invalid-feedback{{ $errors->has('contact_person_position') ? ' d-block' : '' }}">
+                  {{ $errors->first('contact_person_position') }}
+                </div>
+              </div>
+              <div class="col-md-3 mb-1">
+                <label for="contact_person_mobile">Điện thoại</label>
+                <input type="text" class="form-control" name="contact_person_mobile" value="{{ old('contact_person_mobile') }}" required>
+                <div class="invalid-feedback{{ $errors->has('contact_person_mobile') ? ' d-block' : '' }}">
+                  {{ $errors->first('contact_person_mobile') }}
+                </div>
+              </div>
+              <div class="col-md-3 mb-1">
+                <label for="contact_person_email">Email</label>
+                <input type="text" class="form-control" name="contact_person_email" value="{{ old('contact_person_email') }}" required>
+                <div class="invalid-feedback{{ $errors->has('contact_person_email') ? ' d-block' : '' }}">
+                  {{ $errors->first('contact_person_email') }}
+                </div>
+              </div>
+            </div>
+
+            <hr class="mb-4">
+            <button class="btn btn-lg btn-block btn-creative btn-creative-3 m-auto" style="width: 40% !important;" type="submit">đăng ký</button>
+        </div>
+      </div>
+         </form>
+      </fieldset>
+  </section>
+
+  <!-- Image Showcases -->
+  <section class="showcase" id="showcase">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>Fully Responsive Design</h2>
+          <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
+        <div class="col-lg-6 my-auto showcase-text">
+          <h2>Updated For Bootstrap 4</h2>
+          <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>Easy to Use &amp; Customize</h2>
+          <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5">What people are saying...</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
+            <h5>Margaret E.</h5>
+            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
+            <h5>Fred S.</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
+            <h5>Sarah W.</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="call-to-action text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-6 mb-2 mb-md-0">
+                <button type="submit" class="btn btn-block btn-lg btn-primary">Tiến hành khảo sát</button>
+              </div>
+              <div class="col-12 col-md-6">
+                <button type="submit" class="btn btn-block btn-lg btn-secondary">Đăng ký tham gia!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a href="#">About</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Contact</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Ginex 2019. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-facebook fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-instagram fa-2x fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- The Modal -->
+<div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" style="width: 200px; margin: 0px auto;">Đăng nhập</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+        <div class="modal-body">
+       <form class="form-signin" style="background-color: white;">
+          <label for="inputEmail" class="sr-only">Email address</label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+          <p class="mt-3 mb-1 text-muted">&copy; Ginex 2019</p>
+        </form>
+              </div>
+          </div>
+    </div>
+</div>
+<div>
+    <div class="counter">289</div>
+    <div class="counter">587</div>
+    <div class="counter">100</div>
+</div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script>
+    $('.counter').counterUp();
+  </script>
+</body>
+
+</html>
