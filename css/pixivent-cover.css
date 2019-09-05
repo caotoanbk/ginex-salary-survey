@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Montserrat:400,500,700');
 @import '../vendor/bootstrap/css/bootstrap.min.css';
-@import ('../vendor/fontawesome-free/css/all.min.css')
 
 
     /* --------------------
@@ -48,6 +47,11 @@ img {
 .p-150{
     padding-top: 10rem;
     padding-bottom: 10rem;
+}
+
+.p-50 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 .section-heading{
     margin-bottom: 60px;
@@ -116,7 +120,19 @@ img {
 .menu_area nav ul li > a:hover{
     color: #ff4961;
 }
-
+.image-hover img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.image-hover img:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px 5px #d9d9d987;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
 /* --------------------
 :: 3.0 Wellcome Area CSS
 -----------------------*/
@@ -161,11 +177,16 @@ img {
 }
 
 .welcome-thumb {
-    width: 45%;
+    width: 40%;
     position: absolute;
-    bottom: 305px;
-    right: 20px;
+    bottom: 330px;
+    right: 70px;
     z-index: 9;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 7px 4px #777;
+	-moz-box-shadow: 0 7px 4px #777;
+	box-shadow: 0 7px 4px #777;
 }
 
 .welcome-thumb img{
@@ -203,6 +224,12 @@ img {
     transition-duration: .5s;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
+}
+.btn.small-btn{
+    min-width: 120px;
+    font-size: 13px;
+    padding: 3px 0;
+    height: auto;
 }
 /* --------------------
 :: 6.0 Flip Logo Css
@@ -346,4 +373,55 @@ img {
 .card{
     -webkit-box-shadow: 0 10px 40px 0 rgba(62,57,107,.07), 0 2px 9px 0 rgba(62,57,107,.06);
     box-shadow: 0 10px 40px 0 rgba(62,57,107,.07), 0 2px 9px 0 rgba(62,57,107,.06); 
+}
+/* ---------------
+12:: News section
+------------------ */
+.block-title span{
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 3px 0px 6px 0px;
+    border-bottom: 5px solid #f7941d;
+    text-transform: uppercase;
+}
+/* ------------------
+13:: Gallery
+--------------------- */
+.gallery img{
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
+}
+@media(max-width: 1268px){
+    .gallery img{
+        width: 150px;
+        height: 150px;
+        object-fit: scale-down;
+    }
+}
+
+/* -------------
+14:: Footer
+----------------*/
+footer{
+    color: #fff;
+    background-color: #222;
+}
+footer ul{
+    list-style: none;
+}
+footer i.fas{
+    color: var(--success);
+}
+footer ul li{
+    padding: 5px;
+}
+.footer-block-title span{
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 3px 0px 6px 0px;
+    border-bottom: 3px solid var(--warning);
+    text-transform: uppercase;
 }
