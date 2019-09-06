@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Montserrat:400,500,700');
 @import '../vendor/bootstrap/css/bootstrap.min.css';
+@import './animate.css';
+@import './magnific-popup.css';
 
 
-    /* --------------------
-    :: 1.0 Base CSS Start
-    ----------------------*/
+/* --------------------
+:: 1.0 Base CSS Start
+----------------------*/
 
-    * {
-        margin: 0;
-        padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -65,6 +67,9 @@ img {
 .opacity-1{
     opacity: .07;
 }
+.navbar-light .navbar-toggler{
+    background-color: #fff;
+}
 
 /* --------------------
 :: 2.0 Header Area CSS
@@ -106,7 +111,7 @@ img {
 
 .menu_area #nav .nav-link {
     color: #fff;
-    display: block;
+    display: inline-block;
     font-size: 16px;
     font-weight: 500;
     border-radius: 30px;
@@ -116,6 +121,21 @@ img {
     padding: 10px 10px;
     letter-spacing: 1px;
 }
+
+/*hover effect to link in header*/
+.menu_area .nav-link.menu-item { display: inline-block; position: relative;}
+.menu_area .nav-link.menu-item:before, .menu_area .nav-link.menu-item:after { content: ''; position: absolute; bottom: .5em; height: 3px; transition: all 0.3s cubic-bezier(0.15, 0.29, 0.42, 0.63); }
+
+.menu_area .nav-link.menu-item:hover:before, .menu_area .nav-link.menu-item:hover:after { transition: all 0.3s cubic-bezier(0.54, 0.38, 0.85, 0.54); }
+
+.menu_area .nav-link.menu-item:before { left: .7em; right: 100%; border-top: 1px solid; }
+
+.menu_area .nav-link.menu-item:after { right: .7em; left: 100%; border-top: 1px solid; height: 2px; }
+
+.menu_area .nav-link.menu-item.current:before, .menu_area .nav-link.menu-item:hover:before { right: .7em; }
+
+.menu_area .nav-link.menu-item.current:after, .menu_area .nav-link.menu-item:hover:after { left: .7em; }
+/*end hover effect*/
 
 .menu_area nav ul li > a:hover{
     color: #ff4961;
@@ -132,6 +152,40 @@ img {
     box-shadow: 0px 0px 30px 5px #d9d9d987;
     margin-top: -10px;
     margin-bottom: 10px;
+}
+
+/* stcicky css */
+
+.header_area.sticky {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d1efe+0,f9214f+100 */
+    background: #7d1efe; /* Old browsers */
+    background: -moz-linear-gradient(left, #7d1efe 0%, #f9214f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #7d1efe 0%,#f9214f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #7d1efe 0%,#f9214f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d1efe', endColorstr='#f9214f',GradientType=1 ); /* IE6-9 */
+    -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    height: 75px;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.header_area.sticky h4{
+    color: #fff !important;
+}
+
+.header_area.sticky .menu_area .navbar-brand {
+    font-size: 50px;
+}
+
+.header_area.sticky .menu_area #nav .nav-link {
+    padding: 10px;
+    letter-spacing: 1px;
+}
+.header_area.sticky .navbar {
+    padding: 0;
 }
 /* --------------------
 :: 3.0 Wellcome Area CSS
@@ -185,8 +239,8 @@ img {
     border-radius: 5px;
     overflow: hidden;
     -webkit-box-shadow: 0 7px 4px #777;
-	-moz-box-shadow: 0 7px 4px #777;
-	box-shadow: 0 7px 4px #777;
+    -moz-box-shadow: 0 7px 4px #777;
+    box-shadow: 0 7px 4px #777;
 }
 
 .welcome-thumb img{
@@ -241,6 +295,62 @@ img {
     margin-top: -3px;
     border-radius: 5px;
 }
+
+/* ---------------------
+::7.0 Media query
+---------------------- */
+@media only screen and (max-width: 1200px) {
+    .welcome-thumb{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .lead.mission{
+        font-size: .98em;
+    }
+}
+
+
+/* ----------------
+:: 8.0 Headroom
+------------------ */
+
+.headroom {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition: .25s
+        -o-transition: .25s
+        -moz-transition: .25s
+        -ms-transition: .25s
+        transition: transform .25s ease-in-out;
+}
+.headroom--unpinned {
+    top: -108px;
+    -webkit-transition: .25s;
+    -o-transition: .25s;
+    -moz-transition: .25s;
+    -ms-transition: .25s;
+    transition: .25s;
+    -webkit-transform: translateY(-108px);
+    -o-transform: translateY(-108px);
+    -moz-transform: translateY(-108px);
+    -ms-transform: translateY(-108px);
+    transform: translateY(-108px);
+}
+
+.headroom--pinned {
+    top: 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    transition: .5s;
+}
+
 
 /* ----------------------
 :: 10.0 Typerwriter

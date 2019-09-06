@@ -1,0 +1,17 @@
+@media (min-width: 768px) and (max-width: 991px) {
+    #ca-navbar {
+        padding: 30px;
+        border-radius: 3px;
+        background-color: #7d1efe;
+        text-align: left;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    #ca-navbar{
+        padding: 20px;
+        border-radius: 3px;
+        background-color: #7d1efe;
+        text-align: left;
+    }
+}
