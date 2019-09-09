@@ -2,8 +2,11 @@
     #ca-navbar {
         padding: 30px;
         border-radius: 3px;
-        background-color: #7d1efe;
+        background-color: #333;
         text-align: left;
+    }
+    #ca-navbar .menu-item{
+        color: #fff;
     }
 }
 
@@ -11,7 +14,10 @@
     #ca-navbar{
         padding: 20px;
         border-radius: 3px;
-        background-color: #7d1efe;
+        background-color: #333;
         text-align: left;
+    }
+    #ca-navbar .menu-item{
+        color: #fff;
     }
 }

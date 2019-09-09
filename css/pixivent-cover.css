@@ -227,7 +227,7 @@ img {
 
 .wellcome_area{
     background: linear-gradient(146deg, transparent 0%, rgba(0, 0, 0, 0.2) 100%), url(../img/ginex-home-1.jpg);
-    height: 100.5vh;
+    height: 100.3vh;
     position: relative;
     z-index: 1;
     background-position: bottom center;
