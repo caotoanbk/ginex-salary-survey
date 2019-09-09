@@ -7,13 +7,13 @@ if ($window.width() > 767) {
 
 
 // :: 8.0 Sticky Active Code
-$window.on('scroll', function () {
-    if ($window.scrollTop() > 48) {
-        $('.header_area').addClass('sticky slideInDown');
-    } else {
-        $('.header_area').removeClass('sticky slideInDown');
-    }
-});
+//$window.on('scroll', function () {
+//    if ($window.scrollTop() > 48) {
+//        $('.header_area').addClass('sticky slideInDown');
+//    } else {
+//        $('.header_area').removeClass('sticky slideInDown');
+//    }
+//});
 
 // :: 9.0 Magnific popup code
 $('.magnific-popup-link').magnificPopup({
