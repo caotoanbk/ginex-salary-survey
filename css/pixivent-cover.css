@@ -253,9 +253,10 @@ img {
     z-index: 3;
 }
 .wellcome-heading > h3{
-    font-size: 26.5px;
+    font-size: 27px;
     color: #fff;
     font-weight: 400;
+    font-family: Montserrat, Aria, sans-serif;
 }
 .wellcome-heading > p {
     color: #fff;
@@ -603,6 +604,9 @@ footer ul{
 footer i.fas{
     color: var(--success);
 }
+footer .mission i.fas{
+    color: #fff;
+}
 footer ul li{
     padding: 5px;
 }
@@ -613,4 +617,7 @@ footer ul li{
     padding: 3px 0px 6px 0px;
     border-bottom: 3px solid var(--warning);
     text-transform: uppercase;
+}
+footer .mission{
+    font-family: Roboto, Arial, sans-serif;
 }
