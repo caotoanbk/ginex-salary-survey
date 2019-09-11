@@ -364,6 +364,14 @@ img {
 .btn-creative-1:hover{
     color: #0062cc;
 }
+.btn-creative-2{
+    border: 3px solid #fff;
+    color: #212529;
+    background-color: #ffc107;
+}
+.btn-creative-2:hover{
+    color: #ffc107;
+}
 /* --------------------
 :: 6.0 Flip Logo Css
 ----------------------*/
@@ -620,5 +628,5 @@ footer ul li{
     text-transform: uppercase;
 }
 footer .mission{
-    font-family: Verdana, Arial, sans-serif;
+    font-family: "Times New Roman", Arial, sans-serif;
 }
