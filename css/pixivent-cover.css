@@ -232,6 +232,7 @@ img {
     z-index: 1;
     background-position: bottom center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .wellcome_area:after{
@@ -619,5 +620,5 @@ footer ul li{
     text-transform: uppercase;
 }
 footer .mission{
-    font-family: Roboto, Arial, sans-serif;
+    font-family: Verdana, Arial, sans-serif;
 }
