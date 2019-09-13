@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Niramit:300,400,700|Lato:400,500,700|Farsan');
+@import './animate.css';
 /*!
  * Start Bootstrap - Landing Page v5.0.6 (https://startbootstrap.com/template-overviews/landing-page)
  * Copyright 2013-2019 Start Bootstrap
@@ -72,7 +73,7 @@ header.masthead {
   background: url("../img/ginex-salary-survey-welcome.jpg") no-repeat center center;
   background-size: cover;
   background-attachment:scroll;
-  padding-top: 8rem;
+  padding-top: 11rem;
   padding-bottom: 8rem;
   box-shadow:.3px .3px 5px 1px #999;
   height: 100vh;
@@ -92,7 +93,7 @@ header.masthead h1 {
   font-size: 2rem;
 }
 
- (min-width: 768px) {
+ @media (min-width: 768px) {
   header.masthead {
     padding-top: 12rem;
     padding-bottom: 12rem;
@@ -178,8 +179,11 @@ footer.footer {
 }
 
 /*hover effect to link in header*/
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.7);
+}
 .nav-link.menu-item { display: inline-block; position: relative; color: #797979; padding-left: 0.5rem; padding-right: .5rem;}
-.nav-link.menu-item:hover { color: #4e8fd1;}
+.nav-link.menu-item:hover { color: #4e8fd1 !important;}
 .nav-link.menu-item:before, .nav-link.menu-item:after { content: ''; position: absolute; bottom: .5em; height: 3px; transition: all 0.3s cubic-bezier(0.15, 0.29, 0.42, 0.63); }
 .nav-link.menu-item:hover:before, .nav-link.menu-item:hover:after { transition: all 0.3s cubic-bezier(0.54, 0.38, 0.85, 0.54); }
 .nav-link.menu-item:before { left: .5rem; right: 100%; border-top: 1px solid; }
@@ -215,7 +219,7 @@ footer.footer {
 .button:hover{
     color: #fff;
     border-collapse: #4e8fd1;
-    background: #438fd1;
+    background: #4e8fd1;
     text-decoration: none;
 }
 /*end button in header*/

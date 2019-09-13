@@ -21,7 +21,7 @@
         <!-- Custom styles for this template -->
         <link href="css/landing-page.css" rel="stylesheet">
         <link rel="stylesheet" href="css/custom-form.css">
-        <link rel="stylesheet" href="css/pricing-table.css">
+        <link rel="stylesheet" href="css/test/pricing.css">
         <style>
             .table td{
                 padding: .3rem;
@@ -45,11 +45,10 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="nav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="index.html" class="nav-link menu-item">Trang chủ</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link menu-item">Lợi ích đem lại</a></li>
                         <li class="nav-item"><a href="#demo" class="nav-link menu-item">Demo</a></li>
-                        <li class="nav-item"><a href="#package" class="nav-link menu-item">Các gói khảo sát</a></li>
                         <li class="nav-item"><a href="#benefit" class="nav-link menu-item">Đăng ký</a></li>
-                        <li class="nav-item ml-0 ml-lg-4"><button class="button button--ghost button--slim" data-toggle="modal" data-target="#myModal" style="min-width: 150px; outline: none;"><i class="fa fa-sign-in-alt"></i>&nbsp;Đăng nhập</button></li>
+                        <li class="nav-item ml-0 ml-lg-4"><button class="button button--ghost button--slim" data-toggle="modal" data-target="#myModal" style="min-width: 150px; outline: none;"><i class="fa fa-sign-in-alt"></i>&nbsp;&nbsp;Đăng nhập</button></li>
                     </ul>
                 </div>
             </div>
@@ -61,7 +60,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-9 mx-auto">
-                        <h2 class="mb-3 text-warning">Mức chi trả tiền lương của các doanh nghiệp đang ở đâu trên thị trường & khu vực ??? </h2>
+                        <h2 class="text-warning animated slideInLeft">Mức chi trả tiền lương của các doanh nghiệp đang ở đâu trên thị trường &amp; khu vực ??? </h2>
                     </div>
                 </div>
             </div>
@@ -72,58 +71,60 @@
             <div class="container-fluid">
                 <div class="row d-flex align-items-center justify-content-center">
                     <div class=""><img src="./img/idea.png" alt="" class=""></div>
-                    <h2 class="text-success m-0 p-0 text-left pl-3 col-8 col-md-5">Lợi ích của việc tham gia 
+                    <h2 class="text-secondary m-0 p-0 text-left pl-3 col-8 col-md-5">Lợi ích của việc tham gia 
                         khảo sát tiền lương 2019 !!!</h2>
                 </div>
                 <br>
                 <!-- Carousel -->
                 <div class="bd-example showcase">
-                    <div id="carouselBenefit" class="carousel slide" style="border-radius: 0.5rem; border: 1px solid transparent; overflow: hidden;" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                        </ol>
+                    <div id="carouselBenefit" class="carousel slide" style="border-radius: 0rem; border: 1px solid transparent; overflow: hidden;" data-ride="carousel">
+                        <!--
+<ol class="carousel-indicators">
+<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+</ol>
+-->
                         <div class="carousel-inner text-left">
-                            <div class="carousel-item active bg-info text-white">
+                            <div class="carousel-item active">
                                 <div class="row no-gutters">
 
-                                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/benefit/01.png'); overflow: hidden;"></div>
+                                    <div class="col-lg-6 order-lg-2 showcase-img" style="background-image: url('img/benefit/01.png'); overflow: hidden; border-radius: .5rem;"></div>
                                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                                         <h5 class="pb-3" style="text-decoration: underline;">Tham gia khảo sát tiền lương</h5>
                                         <p class="lead mb-0">Giúp doanh nghiệp/cá nhân có được bức tranh tổng thể thị trường lao động trên cơ sở số liệu khảo sát có được từ nhiều doanh nghiệp trong &amp; ngoài nước cũng như nhiều cá nhân tham gia.</p>
-                                        <div class="btn-group w-100 pt-3 mt-2" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-warning w-50" style="border-top-left-radius: 100px; border-bottom-left-radius: 100px;" data-toggle="modal" data-target=".bd-example-modal-xl">Doanh nghiệp đăng ký</button>
-                                            <button type="button" class="btn btn-secondary w-50" style="border-top-right-radius: 100px; border-bottom-right-radius: 100px">Cá nhân đăng ký</button>
+                                        <div class="sw-100 pt-3 mt-2" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-warning" style="border-radius: 100px; width: 48%;" data-toggle="modal" data-target=".bd-example-modal-xl">Doanh nghiệp đăng ký</button>
+                                            <button type="button" class="btn btn-outline-secondary" style="border-radius: 100px; width: 48%;">Cá nhân đăng ký</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item bg-warning">
+                            <div class="carousel-item">
                                 <div class="row no-gutters">
 
-                                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/benefit/02.png'); outline: none;"></div>
-                                    <div class="col-lg-6 order-lg-1 my-auto showcase-text text-white" style="outline: none;">
+                                    <div class="col-lg-6 order-lg-2 showcase-img" style="background-image: url('img/benefit/02.png'); outline: none; border-radius: .5rem"></div>
+                                    <div class="col-lg-6 order-lg-1 my-auto showcase-text" style="outline: none;">
                                         <h5 class="pb-3" style="text-decoration: underline;">Tham gia khảo sát tiền lương</h5>
                                         <p class="lead mb-0">Giúp doanh nghiệp nhận diện mức chi trả, ra quyết định chính xác về chính sách lương bổng &amp; đãi ngộ nhằm giữ chân &amp; thu hút nhân tài.</p>
-                                        <div class="btn-group w-100 pt-3 mt-2" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-success w-50" style="border-top-left-radius: 100px; border-bottom-left-radius: 100px;" data-toggle="modal" data-target=".bd-example-modal-xl">Doanh nghiệp đăng ký</button>
-                                            <button type="button" class="btn btn-secondary w-50" style="border-top-right-radius: 100px; border-bottom-right-radius: 100px">Cá nhân đăng ký</button>
+                                        <div class="sw-100 pt-3 mt-2" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-warning" style="border-radius: 100px; width: 48%;" data-toggle="modal" data-target=".bd-example-modal-xl">Doanh nghiệp đăng ký</button>
+                                            <button type="button" class="btn btn-outline-secondary" style="border-radius: 100px; width: 48%;">Cá nhân đăng ký</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item bg-success text-white">
+                            <div class="carousel-item">
                                 <div class="row no-gutters">
 
-                                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/benefit/03.jpg');"></div>
+                                    <div class="col-lg-6 order-lg-2 showcase-img" style="background-image: url('img/benefit/03.jpg'); border-radius: .5rem;"></div>
                                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                                         <h5 class="pb-3" style="text-decoration: underline;">Tham gia khảo sát tiền lương</h5>
                                         <p class="lead mb-0">
                                             Giúp cá nhân ra quyết định chính xác về việc đi hay ở lại với doanh nghiệp nếu vì lý do tiền lương.</p>
-                                        <div class="btn-group w-100 pt-3 mt-2" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-info w-50" style="border-top-left-radius: 100px; border-bottom-left-radius: 100px;" data-toggle="modal" data-target=".bd-example-modal-xl">Doanh nghiệp đăng ký</button>
-                                            <button type="button" class="btn btn-secondary w-50" style="border-top-right-radius: 100px; border-bottom-right-radius: 100px">Cá nhân đăng ký</button>
+                                        <div class="sw-100 pt-3 mt-2" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-warning" style="border-radius: 100px; width: 48%;" data-toggle="modal" data-target=".bd-example-modal-xl">Doanh nghiệp đăng ký</button>
+                                            <button type="button" class="btn btn-outline-secondary" style="border-radius: 100px; width: 48%;">Cá nhân đăng ký</button>
                                         </div>
                                     </div>
                                 </div>
@@ -150,7 +151,7 @@
                     <div class="row">
                         <div class="col-lg-12 text-center">
                             <div class="section-heading">
-                                <h2 class="text-success">Demos</h2>
+                                <h2 class="text-secondary">Demos</h2>
                             </div>
                             <p>Biểu đồ minh họa số liệu được tổng hợp</p>
                         </div>
@@ -187,70 +188,71 @@
         <!-- section pricing -->
         <section class="pricing bg-light" id="package" style="padding: 4rem 0;">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 pb-5">
-                        <h2 class="text-center text-success">Các gói khảo sát</h2>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12">
+                        <h2 class="text-secondary text-center pb-4">Các gói khảo sát</h2>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
+                    <div class="col-md-3 col-sm-4 col-6">
                         <div class="pricingTable">
                             <div class="pricingTable-header">
-                                <h3 class="title">Cơ bản</h3>
+                                <span class="heading">
+                                    <h3>Cơ bản</h3>
+                                </span>
+                                <span class="price-value"><span class="price">Giá</span><span class="mo">5<sup>tr</sup>/năm</span></span>
                             </div>
-                            <div class="price-value">
-                                <div class="value">
-                                    <!--                                    <span class="currency">$</span>-->
-                                    <span class="amount">5.5<span>tr</span></span>
-                                    <span class="month">/năm</span>
-                                </div>
+                            <div class="pricingContent">
+                                <ul>
+                                    <li>Thông tin lương</li>
+                                    <li>Tỷ lệ tăng lương hàng năm</li>
+                                    <li>&nbsp;</li>
+                                </ul>
                             </div>
-                            <ul class="pricing-content">
-                                <li>Thông tin về lương</li>
-                                <li>Tỉ lệ tăng lương hàng năm</li>
-                                <li style="visibility: hidden;">&nbsp;</li>
-                            </ul>
-                            <a href="#" class="pricingTable-signup">Mua ngay</a>
+                            <div class="pricingTable-sign-up">
+                                <a href="#" class="btn btn-block btn-default">Mua ngay</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
-                        <div class="pricingTable purple">
-                            <div class="pricingTable-header">
-                                <h3 class="title">Nâng cao</h3>
-                            </div>
-                            <div class="price-value">
-                                <div class="value">
-                                    <span class="amount">12.5<span>tr</span></span>
-                                    <span class="month">/năm</span>
-                                </div>
-                            </div>
-                            <ul class="pricing-content">
-                                <li>Năng suất lao động</li>
-                                <li>Bảo hiểm nhân thọ</li>
-                                <li>Các khoản phúc lợi khác</li>
-                            </ul>
-                            <a href="#" class="pricingTable-signup">Mua ngay</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
+                    </div>                
+                    <div class="col-md-3 col-sm-4 col-6">
                         <div class="pricingTable blue">
                             <div class="pricingTable-header">
-                                <h3 class="title">Full</h3>
-                                <!--                                <span class="sub-title">Best value</span>-->
-                                <span class="year">Tiết kiệm <br>15%</span>
+                                <span class="heading">
+                                    <h3>Nâng cao</h3>
+                                </span>
+                                <span class="price-value"><span class="price">Giá</span><span class="mo">12.5<sup>tr</sup>/năm</span></span>
                             </div>
-                            <div class="price-value">
-                                <div class="value">
-                                    <span class="amount">15<span>tr</span></span>
-                                    <span class="month">/năm</span>
-                                </div>
+                            <div class="pricingContent">
+                                <ul>
+                                    <li>Năng suất lao động</li>
+                                    <li>Bảo hiểm nhân thọ</li>
+                                    <li>Các khoản phúc lợi khác</li>
+                                </ul>
                             </div>
-                            <ul class="pricing-content">
-                                <li>Thông tin tiền lương</li>
-                                <li>Chi phí lao động</li>
-                                <li>Tỷ lệ nghỉ việc..</li>
-                            </ul>
-                            <a href="#" class="pricingTable-signup">Mua ngay</a>
+                            <div class="pricingTable-sign-up">
+                                <a href="#" class="btn btn-block btn-default">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>                
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="pricingTable yellow">
+                            <div class="pricingTable-header">
+                                <span class="heading">
+                                    <h3>Full</h3>
+                                </span>
+                                <span class="price-value"><span class="price">Giá</span><span class="mo">15<sup>tr</sup>/năm</span></span>
+                            </div>
+                            <div class="pricingContent">
+                                <ul>
+                                    <li>Thông tin lương</li>
+                                    <li>Chi phí lao động</li>
+                                    <li>Tỷ lệ nghỉ việc</li>
+                                </ul>
+                            </div>
+                            <div class="pricingTable-sign-up">
+                                <a href="#" class="btn btn-block btn-default">Mua ngay</a>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -590,10 +592,16 @@
             </div>
         </div>
         <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--        <script src="vendor/jquery/jquery.min.js"></script>-->
+        <!--        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
         <script src="js/jquery.counterup.min.js"></script>
+        <script>
+            $('#benefitCarousel').carousel();
+        </script>
     </body>
 
 </html>

@@ -47,8 +47,8 @@ img {
     background-color: #f9f9f9 !important;
 }
 .p-150{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .p-50 {
@@ -56,7 +56,7 @@ img {
     padding-bottom: 2rem;
 }
 .section-heading{
-    margin-bottom: 60px;
+    margin-bottom: 2rem;
 }
 .section-heading > h2{
     font-weight: 400;
@@ -127,7 +127,7 @@ img {
 
 /*hover effect to link in header*/
 .menu_area .nav-link.menu-item { display: inline-block; position: relative; color: #797979;}
-.menu_area .nav-link.menu-item:hover { color: #4e8fd1;}
+.menu_area .nav-link.menu-item:hover { color: var(--warning);}
 .menu_area .nav-link.menu-item:before, .menu_area .nav-link.menu-item:after { content: ''; position: absolute; bottom: .5em; height: 3px; transition: all 0.3s cubic-bezier(0.15, 0.29, 0.42, 0.63); }
 
 .menu_area .nav-link.menu-item:hover:before, .menu_area .nav-link.menu-item:hover:after { transition: all 0.3s cubic-bezier(0.54, 0.38, 0.85, 0.54); }
@@ -178,14 +178,14 @@ img {
     border-width: 2px;
 }
 .button.button--ghost{
-    color: #4e8fd1;
-    border-color: #4e8fd1;
+    color: var(--warning);
+    border-color: var(--warning);
     background: transparent;
 }
 .button:hover{
     color: #fff;
-    border-collapse: #4e8fd1;
-    background: #438fd1;
+    border-collapse: var(--warning);
+    background: var(--warning);
     text-decoration: none;
 }
 /* stcicky css */
