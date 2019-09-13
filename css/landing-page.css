@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Niramit:300,400,700|Lato:400,500,700|Farsan');
 /*!
  * Start Bootstrap - Landing Page v5.0.6 (https://startbootstrap.com/template-overviews/landing-page)
  * Copyright 2013-2019 Start Bootstrap
@@ -22,8 +23,8 @@
 }
 
 .p-50 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -32,7 +33,7 @@ html{
 }
 
 body {
-  font-family: 'Prompt', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Niramit', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -45,7 +46,7 @@ h6 {
   font-weight: 700;
 }
 .carousel-control-next, .carousel-control-prev {
-    width: 10%;
+    width: 4%;
 }
 .image-hover img{
     -webkit-transform: scale(1);
@@ -70,7 +71,7 @@ header.masthead {
   background-color: #343a40;
   background: url("../img/ginex-salary-survey-welcome.jpg") no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment:scroll;
   padding-top: 8rem;
   padding-bottom: 8rem;
   box-shadow:.3px .3px 5px 1px #999;
@@ -91,7 +92,7 @@ header.masthead h1 {
   font-size: 2rem;
 }
 
-@media (min-width: 768px) {
+ (min-width: 768px) {
   header.masthead {
     padding-top: 12rem;
     padding-bottom: 12rem;
@@ -106,18 +107,18 @@ header.masthead h1 {
 }
 
 .showcase .showcase-img {
-  min-height: 20rem;
+  min-height: 23rem;
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   .showcase .showcase-text {
-    padding: 5rem;
+    padding: 3rem;
   }
 }
 
 .features-icons {
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
 }
 
@@ -176,6 +177,50 @@ footer.footer {
   padding-bottom: 4rem;
 }
 
+/*hover effect to link in header*/
+.nav-link.menu-item { display: inline-block; position: relative; color: #797979; padding-left: 0.5rem; padding-right: .5rem;}
+.nav-link.menu-item:hover { color: #4e8fd1;}
+.nav-link.menu-item:before, .nav-link.menu-item:after { content: ''; position: absolute; bottom: .5em; height: 3px; transition: all 0.3s cubic-bezier(0.15, 0.29, 0.42, 0.63); }
+.nav-link.menu-item:hover:before, .nav-link.menu-item:hover:after { transition: all 0.3s cubic-bezier(0.54, 0.38, 0.85, 0.54); }
+.nav-link.menu-item:before { left: .5rem; right: 100%; border-top: 1px solid; }
+.nav-link.menu-item:after { right: .5rem; left: 100%; border-top: 1px solid; height: 2px; }
+
+.nav-link.menu-item.current:before, .nav-link.menu-item:hover:before { right: .5rem; }
+.nav-link.menu-item.current:after, .nav-link.menu-item:hover:after { left: .5rem; }
+/*end hover effect*/
+
+/*button in header*/
+.button{
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 10em;
+    border: 3px solid #4e8fd1;
+    text-align: center;
+    line-height: 1;
+    transition: all .25s;
+    padding:10px 16px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Montserrat, Arial, sans-serif;
+    margin-bottom: -100px;
+}
+.button.button--slim{
+    border-width: 2px;
+}
+.button.button--ghost{
+    color: #4e8fd1;
+    border-color: #4e8fd1;
+    background: transparent;
+}
+.button:hover{
+    color: #fff;
+    border-collapse: #4e8fd1;
+    background: #438fd1;
+    text-decoration: none;
+}
+/*end button in header*/
+
+
 
 /*sign-in-form*/
 section.section-login {
@@ -233,9 +278,11 @@ nav a.link:hover{
     background-color: #007bff;
     color: #fff;
 }
-nav{
+nav.navbar{
      box-shadow:.3px .3px 5px 1px #999;
+    padding: 1em 0em;
 }
+
 
 
 /*sign up*/
@@ -343,5 +390,5 @@ footer ul li{
     text-transform: uppercase;
 }
 footer .mission{
-    font-family: Verdana, Arial, sans-serif;
+    font-family: Farsan, Arial, sans-serif;
 }

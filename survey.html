@@ -39,15 +39,18 @@
     <body>
 
         <!-- Navigation -->
-        <nav class="navbar navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-light bg-light fixed-top navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#"><i class="fa fa-dollar-sign"></i>alary Survey</a>
-                <div>
-                    <a href="index.html" class="link"><i class="fa fa-home"></i>&nbsp;Trang chủ</a>
-                    <a href="#demo" class="link"><i class="fas fa-poll"></i>&nbsp;Demo</a>
-                    <a href="#package" class="link"><i class="fa fa-money-check"></i>&nbsp;Các gói khảo sát</a>
-                    <a href="#benefit" class="link"><i class="fa fa-user-plus"></i>&nbsp;Đăng ký</a>
-                    <button class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in-alt"></i>&nbsp;Đăng nhập</button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link menu-item">Trang chủ</a></li>
+                        <li class="nav-item"><a href="#demo" class="nav-link menu-item">Demo</a></li>
+                        <li class="nav-item"><a href="#package" class="nav-link menu-item">Các gói khảo sát</a></li>
+                        <li class="nav-item"><a href="#benefit" class="nav-link menu-item">Đăng ký</a></li>
+                        <li class="nav-item ml-0 ml-lg-4"><button class="button button--ghost button--slim" data-toggle="modal" data-target="#myModal" style="min-width: 150px; outline: none;"><i class="fa fa-sign-in-alt"></i>&nbsp;Đăng nhập</button></li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -65,7 +68,7 @@
         </header>
 
         <!-- Icons Grid -->
-        <section id="benefit" class="features-icons bg-white text-center">
+        <section id="benefit" class="features-icons bg-light text-center">
             <div class="container-fluid">
                 <div class="row d-flex align-items-center justify-content-center">
                     <div class=""><img src="./img/idea.png" alt="" class=""></div>
@@ -75,19 +78,24 @@
                 <br>
                 <!-- Carousel -->
                 <div class="bd-example showcase">
-                    <div id="carouselBenefit" class="carousel slide" style="border-radius: 100rem; border: 1px solid transparent; overflow: hidden;" data-ride="carousel">
+                    <div id="carouselBenefit" class="carousel slide" style="border-radius: 0.5rem; border: 1px solid transparent; overflow: hidden;" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                         </ol>
-                        <div class="carousel-inner">
+                        <div class="carousel-inner text-left">
                             <div class="carousel-item active bg-info text-white">
                                 <div class="row no-gutters">
 
                                     <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/benefit/01.png'); overflow: hidden;"></div>
                                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                                        <p class="lead mb-0">Tham gia khảo sát tiền lương giúp doanh nghiệp/ cá nhân có được bức tranh tổng thể thị trường lao động trên cơ sở số liệu khảo sát có được từ nhiều doanh nghiệp trong &amp; ngoài nước cũng như nhiều cá nhân tham gia.</p>
+                                        <h5 class="pb-3" style="text-decoration: underline;">Tham gia khảo sát tiền lương</h5>
+                                        <p class="lead mb-0">Giúp doanh nghiệp/cá nhân có được bức tranh tổng thể thị trường lao động trên cơ sở số liệu khảo sát có được từ nhiều doanh nghiệp trong &amp; ngoài nước cũng như nhiều cá nhân tham gia.</p>
+                                        <div class="btn-group w-100 pt-3 mt-2" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-warning w-50" style="border-top-left-radius: 100px; border-bottom-left-radius: 100px;" data-toggle="modal" data-target=".bd-example-modal-xl">Doanh nghiệp đăng ký</button>
+                                            <button type="button" class="btn btn-secondary w-50" style="border-top-right-radius: 100px; border-bottom-right-radius: 100px">Cá nhân đăng ký</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -95,8 +103,13 @@
                                 <div class="row no-gutters">
 
                                     <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/benefit/02.png'); outline: none;"></div>
-                                    <div class="col-lg-6 order-lg-1 my-auto showcase-text" style="outline: none;">
+                                    <div class="col-lg-6 order-lg-1 my-auto showcase-text text-white" style="outline: none;">
+                                        <h5 class="pb-3" style="text-decoration: underline;">Tham gia khảo sát tiền lương</h5>
                                         <p class="lead mb-0">Giúp doanh nghiệp nhận diện mức chi trả, ra quyết định chính xác về chính sách lương bổng &amp; đãi ngộ nhằm giữ chân &amp; thu hút nhân tài.</p>
+                                        <div class="btn-group w-100 pt-3 mt-2" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-success w-50" style="border-top-left-radius: 100px; border-bottom-left-radius: 100px;" data-toggle="modal" data-target=".bd-example-modal-xl">Doanh nghiệp đăng ký</button>
+                                            <button type="button" class="btn btn-secondary w-50" style="border-top-right-radius: 100px; border-bottom-right-radius: 100px">Cá nhân đăng ký</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -105,8 +118,13 @@
 
                                     <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/benefit/03.jpg');"></div>
                                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                                        <h5 class="pb-3" style="text-decoration: underline;">Tham gia khảo sát tiền lương</h5>
                                         <p class="lead mb-0">
                                             Giúp cá nhân ra quyết định chính xác về việc đi hay ở lại với doanh nghiệp nếu vì lý do tiền lương.</p>
+                                        <div class="btn-group w-100 pt-3 mt-2" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-info w-50" style="border-top-left-radius: 100px; border-bottom-left-radius: 100px;" data-toggle="modal" data-target=".bd-example-modal-xl">Doanh nghiệp đăng ký</button>
+                                            <button type="button" class="btn btn-secondary w-50" style="border-top-right-radius: 100px; border-bottom-right-radius: 100px">Cá nhân đăng ký</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -125,26 +143,8 @@
             <!--- end crousel -->
 
         </section>
-
-        <!-- section sign up -->
-        <section class="bg-white py-3">
-            <div class="container-fluid">
-                <div class="row">
-                    <!--                 <div class="col-sm-6 col-12">
-<img src="./img/person-sign-up.png" class="img-fluid" alt="">
-</div>-->
-                    <div class="col-sm-6 col-12 mx-auto" id="dangky">
-                        <div class="btn-group w-100" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-primary" style="border-top-left-radius: 100px; border-bottom-left-radius: 100px;" data-toggle="modal" data-target=".bd-example-modal-xl">Đăng ký cho doanh nghiệp</button>
-                            <button type="button" class="btn btn-outline-secondary" style="border-top-right-radius: 100px; border-bottom-right-radius: 100px">Đăng ký cho cá nhân</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- section demo -->
-        <section class="bg-light p-150" id="demo" tabindex="-1">
+        <section class="bg-white pt-5" id="demo" tabindex="-1">
             <div class="special_description_area">
                 <div class="container-fluid">
                     <div class="row">
@@ -156,7 +156,7 @@
                         </div>
                         <div class="col-md-3 col-sm-6 col-12 mt-4 text-center image-hover wow fadeInDown show-image" style="visibility: visible; animation-name: fadeInDown;">
                             <div class="bg-black">
-                                <img class="border-grey w-100 h-auto" src="img/demo/1.jpg" alt="Apps Image">
+                                <img class="border-grey w-100 h-auto" src="img/demo/5.jpg" alt="Apps Image">
                             </div>
                             <p class="mt-4 mb-0">Result 1</p>
                         </div>
@@ -168,7 +168,7 @@
                         </div>                        
                         <div class="col-md-3 col-sm-6 col-12 mt-4 text-center image-hover wow fadeInDown show-image" style="visibility: visible; animation-name: fadeInDown;">
                             <div class="bg-black">
-                                <img class="border-grey w-100 h-auto" src="img/demo/5.jpg" alt="Apps Image">
+                                <img class="border-grey w-100 h-auto" src="img/demo/1.jpg" alt="Apps Image">
                             </div>
                             <p class="mt-4 mb-0">Result 5</p>
                         </div>
@@ -185,10 +185,10 @@
         </section>
         <!-- end section demo -->
         <!-- section pricing -->
-        <section class="pricing bg-light p-150" id="package" style="padding-bottom: 10em;">
+        <section class="pricing bg-light" id="package" style="padding: 4rem 0;">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 py-5">
+                    <div class="col-12 pb-5">
                         <h2 class="text-center text-success">Các gói khảo sát</h2>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
@@ -261,7 +261,7 @@
                 <div class="row">
                     <div class="col-sm-6 col-12">
                         <h5 class="mb-4 font-weight-bold text-white footer-block-title"><span>ABOUT US</span></h5>
-                        <ul>
+                        <ul class="m-0">
                             <li><h6 class="text-white">CÔNG TY CỔ PHẦN ĐẦU TƯ GINEX</h6></li>
                             <li><i class="fas fa-check"></i>&nbsp;Địa chỉ: 16/562 Nguyễn Văn Linh, Q. Lê Chân, Hải Phòng</li>
                             <li><i class="fas fa-check"></i>&nbsp;MST: 0201641412</li>
@@ -270,12 +270,13 @@
                             <li><i class="fas fa-check"></i>&nbsp;Website: <a href="www.ginex.com.vn" target="_blank" class="text-info">www.ginex.com.vn</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-6 col-12">
+                    <div class="col-sm-6 col-12 p-relative">
                         <h5 class="mb-4 font-weight-bold text-white footer-block-title"><span>OUR MISSION</span></h5>
                         <div>
                             <p class="lead font-italic mission">&quot;&nbsp;Hỗ trợ các nhà quản trị nhân sự & lãnh đạo các doanh nghiệp có được cơ sở dữ liệu đáng tin cậy về thị trường lao động để hoạch định chính sách nhân sự một cách phù hợp nhằm giữ chân, thu hút & phát triển nhân tài cho tổ chức của mình&nbsp;&quot;</p>
-                            <small class="text-warning float-right">Copyright &copy;2019 by Ginex. All rights reserved.</small>
+
                         </div>
+                        <small class="text-warning" style="position: absolute; bottom: 6px; right: 0px;">Copyright &copy;2019 by Ginex. All rights reserved.</small>
                     </div>
                 </div>
             </div>
@@ -593,10 +594,6 @@
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
         <script src="js/jquery.counterup.min.js"></script>
-        <script>
-            $('#carouselBenefit').carousel();
-        </script>
-
     </body>
 
 </html>

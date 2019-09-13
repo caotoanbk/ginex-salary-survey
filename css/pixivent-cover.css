@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Montserrat:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Niramit:300,400,700|Montserrat:400,500,700|Farsan');
 @import '../vendor/bootstrap/css/bootstrap.min.css';
 @import './animate.css';
 @import './magnific-popup.css';
@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Niramit', sans-serif;
     background-color: #fff;
 }
 
@@ -24,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Niramit', sans-serif;
     font-weight: 100;
     color: #000;
     line-height: 1.5;
@@ -47,20 +47,20 @@ img {
     background-color: #f9f9f9 !important;
 }
 .p-150{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .p-50 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .section-heading{
     margin-bottom: 60px;
 }
 .section-heading > h2{
     font-weight: 400;
-    color: #a551fe;
+    color: #444;
     font-size: 38px;
     margin: 0;
 }
@@ -226,13 +226,13 @@ img {
 -----------------------*/
 
 .wellcome_area{
-    background: linear-gradient(146deg, transparent 0%, rgba(0, 0, 0, 0.2) 100%), url(../img/ginex-home-1.jpg);
+    background: linear-gradient(146deg, transparent 0%, rgba(0, 0, 0, 0.4) 100%), url(../img/ginex-home-1.jpg);
     height: 100.3vh;
     position: relative;
     z-index: 1;
     background-position: bottom center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 .wellcome_area:after{
@@ -296,7 +296,7 @@ img {
 .btn.submit-btn {
     background: #f9214f;
     background: -moz-linear-gradient(left, #f9214f 0%,#fe6f8d 100%);
-    background: -webkit-linear-gradient(left, #f9214f 0%, #fe6f8d 100%);
+    background: -webkit-linear-gradient(left, #F7971E 0%, #FFD200 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9214f', endColorstr='#fe6f8d',GradientType=1 ); /* IE6-9 */
     box-shadow: -4px 2px 16px 0px #0000003b;
     height: 48px;
@@ -377,7 +377,7 @@ img {
 ----------------------*/
 
 .logo-width{
-    width: 70px;
+    width: 95px;
     margin-right: 8px;
     margin-top: -3px;
     border-radius: 5px;
@@ -628,5 +628,5 @@ footer ul li{
     text-transform: uppercase;
 }
 footer .mission{
-    font-family: "Times New Roman", Arial, sans-serif;
+    font-family: "Farsan", Arial, sans-serif;
 }
