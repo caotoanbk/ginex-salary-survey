@@ -5,7 +5,7 @@
 
 
 /* --------------------
-:: 1.0 Base CSS Start
+Base CSS Start
 ----------------------*/
 
 * {
@@ -70,9 +70,18 @@ img {
 .navbar-light .navbar-toggler{
     background-color: #fff;
 }
+.overlay-blue {
+    background: #2196F3;
+    background: rgba(33,150,243,.8);
+}
+
+.card{
+    -webkit-box-shadow: 0 10px 40px 0 rgba(62,57,107,.07), 0 2px 9px 0 rgba(62,57,107,.06);
+    box-shadow: 0 10px 40px 0 rgba(62,57,107,.07), 0 2px 9px 0 rgba(62,57,107,.06); 
+}
 
 /* --------------------
-:: 2.0 Header Area CSS
+Header Area CSS
 ---------------------- */
 
 .header_area{
@@ -125,7 +134,10 @@ img {
     letter-spacing: 1px;
 }
 
-/*hover effect to link in header*/
+/*-----------------------------
+hover effect to link in header
+------------------------------*/
+
 .menu_area .nav-link.menu-item { display: inline-block; position: relative; color: #797979;}
 .menu_area .nav-link.menu-item:hover { color: var(--warning);}
 .menu_area .nav-link.menu-item:before, .menu_area .nav-link.menu-item:after { content: ''; position: absolute; bottom: .5em; height: 3px; transition: all 0.3s cubic-bezier(0.15, 0.29, 0.42, 0.63); }
@@ -139,13 +151,7 @@ img {
 .menu_area .nav-link.menu-item.current:before, .menu_area .nav-link.menu-item:hover:before { right: .7em; }
 
 .menu_area .nav-link.menu-item.current:after, .menu_area .nav-link.menu-item:hover:after { left: .7em; }
-/*end hover effect*/
 
-/*
-.menu_area nav ul li > a:hover{
-    color: #ff4961;
-}
-*/
 .image-hover img{
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -188,41 +194,9 @@ img {
     background: var(--warning);
     text-decoration: none;
 }
-/* stcicky css */
 
-.header_area.sticky {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d1efe+0,f9214f+100 */
-    background: #7d1efe; /* Old browsers */
-    background: -moz-linear-gradient(left, #7d1efe 0%, #f9214f 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #7d1efe 0%,#f9214f 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #7d1efe 0%,#f9214f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d1efe', endColorstr='#f9214f',GradientType=1 ); /* IE6-9 */
-    -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-/*    height: 75px;*/
-    padding-top: 10px;
-    position: fixed;
-    top: 0;
-    z-index: 99;
-}
-
-.header_area.sticky h4{
-    color: #fff !important;
-}
-
-.header_area.sticky .menu_area .navbar-brand {
-    font-size: 50px;
-}
-
-.header_area.sticky .menu_area #nav .nav-link {
-    padding: 10px;
-    letter-spacing: 1px;
-}
-.header_area.sticky .navbar {
-    padding: 0;
-}
 /* --------------------
-:: 3.0 Wellcome Area CSS
+ Wellcome Area CSS
 -----------------------*/
 
 .wellcome_area{
@@ -291,7 +265,7 @@ img {
 }
 
 /* --------------------
-:: 5.0 Pricing
+button
 ---------------------- */
 .btn.submit-btn {
     background: #f9214f;
@@ -322,58 +296,8 @@ img {
     height: auto;
 }
 
-.btn.btn-creative{
-    overflow: hidden;
-    position: relative;
-    outline: none;
-    transition: all .3s;
-    border-radius: 50px;
-    z-index: 1;
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-}
-
-.btn.btn-creative:after{
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    width: 100%;
-    height: 0;
-    top: 50%;
-    left: 50%;
-    background: #fff;
-    opacity: 0;
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(21deg);
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(21deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(21deg);
-    transform: translateX(-50%) translateY(-50%) rotate(21deg);
-}
-
-.btn-creative:hover:after{
-    height: 260%;
-    opacity: 1;
-}
-.btn-creative-1{
-    border: 3px solid #fff;
-    color: #fff;
-    background-color: #0062cc;
-}
-.btn-creative-1:hover{
-    color: #0062cc;
-}
-.btn-creative-2{
-    border: 3px solid #fff;
-    color: #212529;
-    background-color: #ffc107;
-}
-.btn-creative-2:hover{
-    color: #ffc107;
-}
 /* --------------------
-:: 6.0 Flip Logo Css
+Logo
 ----------------------*/
 
 .logo-width{
@@ -383,66 +307,8 @@ img {
     border-radius: 5px;
 }
 
-/* ---------------------
-::7.0 Media query
----------------------- */
-@media only screen and (max-width: 1200px) {
-    .welcome-thumb{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 991px){
-    .lead.mission{
-        font-size: .98em;
-    }
-}
-
-
-/* ----------------
-:: 8.0 Headroom
------------------- */
-
-.headroom {
-/*
-    position: fixed;
-    z-index: 9998;
-    top: 0;
-    left: 0;
-    right: 0;
-*/
-    -webkit-transition: .25s
-        -o-transition: .25s
-        -moz-transition: .25s
-        -ms-transition: .25s
-        transition: transform .25s ease-in-out;
-}
-.headroom--unpinned {
-    top: -108px;
-    -webkit-transition: .25s;
-    -o-transition: .25s;
-    -moz-transition: .25s;
-    -ms-transition: .25s;
-    transition: .25s;
-    -webkit-transform: translateY(-108px);
-    -o-transform: translateY(-108px);
-    -moz-transform: translateY(-108px);
-    -ms-transform: translateY(-108px);
-    transform: translateY(-108px);
-}
-
-.headroom--pinned {
-    top: 0;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    transition: .5s;
-}
-
-
 /* ----------------------
-:: 10.0 Typerwriter
+Typerwriter
 ------------------------ */
 .typewriter h2, .typewriter h3 {
     color: #fff;
@@ -457,13 +323,14 @@ img {
     font-weight: 700;
 }
 
-/* The typing effect */
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
 }
 
-/* The typewriter cursor effect */
+/*-----------------------------
+The typewriter cursor effect 
+------------------------------*/
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-collapse: orange }
@@ -549,30 +416,6 @@ img {
     animation-name: v-move;
 }
 
-/*----------------------
-::11 Card
------------------------*/
-.overlay-blue-grey{
-    background: rgba(96,125,139,.8);
-}
-.overlay-warning {
-    background: #FFA87D;
-    background: rgba(255,168,125,.8);
-}
-.overlay-cyan {
-    /* background: #00BCD4; */
-    background: rgba(0,188,212,.8);
-}
-.overlay-success{background:#16D39A;background:rgba(22,211,154,.8)}
-.overlay-blue {
-    background: #2196F3;
-    background: rgba(33,150,243,.8);
-}
-
-.card{
-    -webkit-box-shadow: 0 10px 40px 0 rgba(62,57,107,.07), 0 2px 9px 0 rgba(62,57,107,.06);
-    box-shadow: 0 10px 40px 0 rgba(62,57,107,.07), 0 2px 9px 0 rgba(62,57,107,.06); 
-}
 /* ---------------
 12:: News section
 ------------------ */
@@ -601,7 +444,7 @@ img {
 }
 
 /* -------------
-14:: Footer
+Footer
 ----------------*/
 footer{
     color: #fff;
@@ -617,7 +460,7 @@ footer .mission i.fas{
     color: #fff;
 }
 footer ul li{
-    padding: 5px;
+    padding: 3px;
 }
 .footer-block-title span{
     color: #fff;
@@ -629,4 +472,44 @@ footer ul li{
 }
 footer .mission{
     font-family: "Farsan", Arial, sans-serif;
+}
+
+/* ---------------------
+Media query
+---------------------- */
+
+@media only screen and (max-width: 1200px) {
+    .welcome-thumb{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .lead.mission{
+        font-size: .98em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #ca-navbar {
+        padding: 30px;
+        border-radius: 3px;
+        background-color: #333;
+        text-align: left;
+    }
+    #ca-navbar .menu-item{
+        color: #fff;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    #ca-navbar{
+        padding: 20px;
+        border-radius: 3px;
+        background-color: #333;
+        text-align: left;
+    }
+    #ca-navbar .menu-item{
+        color: #fff;
+    }
 }
